@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // const p = new Promise(function (resolve, reject) {
+    //     // 做异步操作
+    //     setTimeout(function () {
+    //         console.log('执行任务');
+    //         resolve('resolve为啥不生效');
+    //     });
+    // });
+    function runFn() {
+        const p = new Promise(function (resolve, reject) {
+            // 做异步操作
+            setTimeout(function () {
+                console.log('执行任务')
+                resolve('resolve为啥不生效')
+            }, 2000)
+        })
+        return p
+    }
+    // runFn()
+    runFn().then(function(data) {
+        console.log(data);
+    })
+</script>
+
+</html>
