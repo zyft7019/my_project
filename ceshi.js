@@ -1,8 +1,8 @@
-{
-    name: 'yetingting';
-    age: 20
-},
-{
-    name: 'jiangxiaoyu';
-    age: 20
-}
+const ytt = {
+                name: 'yetingting',
+                age: 20
+            };
+const jxy = {
+                name: 'jiangxiaoyu',
+                age: 20
+            }
